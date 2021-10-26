@@ -37,6 +37,9 @@ nav a{
     display: flex;
     align-items: center;
 }
+.content-space {
+    justify-content: space-around;
+}
 .row{
     display:flex;
     width:100%;
@@ -59,7 +62,6 @@ nav a{
 }
 .article{
     padding: 3rem;
-    max-width: 40%;
 }
 .article h1{
     color: #F8F8F8;
@@ -103,7 +105,20 @@ nav a{
     border-radius: 20px;
     border: none;
     box-shadow: #808080 3px 3px 5px;
-    width: 200px
+    width: 200px;
+}
+
+.input-group .input {
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: #808080 3px 3px 5px;
+    width: 400px;
+}
+
+textarea {
+    height: 100px;
 }
 .with-arrow-container {
     margin: 15px 0;
@@ -132,6 +147,12 @@ nav a{
     box-shadow: none;
     border: none;
     color: #F8F8F8;
+    transition: .3s ease-in-out;
+}
+
+.button-primary:hover{
+    background-color: #00225C;
+    cursor: pointer;
 }
 .row-start{
     display: flex;
@@ -152,4 +173,95 @@ nav a{
     height: 45rem;
     display: block;
     width: auto;
+}
+
+.w-100 {
+    width: 100%;
+    max-width: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.mv-l {
+    margin: 15px auto;
+}
+
+.ml-l {
+    margin-left: 3rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    .title {
+        text-align: center;
+    }
+
+    .section {
+        height: auto;
+        padding: 5px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+  
+    .input-group label {
+        font-size: 1.2rem;
+    }
+
+    .input-group .input {
+        width: 300px;
+    }
+    .content {
+        flex-direction: column;
+        height: auto;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .w-50 {
+        width: 100%;
+    }
+
+    .article{
+        display: flex;
+        padding: 3px 0;
+        justify-content: center;
+    }
+
+    .article h1{
+        font-size: 2rem;
+        margin: .5rem auto;
+    }
+    .article p{
+        font-size: 1.4rem;
+    }
+    .article-secondary h2{
+        font-size: 4rem;
+        margin: .5rem auto;
+    }
+    .article-secondary p{
+        font-size: 1.6rem;
+    }
+    .service-card {
+        width: 200px;
+        height: auto;
+        display: block;
+    }
+
+    .ml-l {
+        margin-left: 1rem;
+    }
+    
+    .dog-image{
+        height: auto;
+        width: 100%;
+    }
 }
